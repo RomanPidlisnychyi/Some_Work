@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #676767;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    min-width: 482px;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    min-width: 482px;
+    max-width: 1024px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 420px;
+}
+
+.header__link:hover::after {
+    opacity: 1;
+}
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(31, 132, 231), rgb(55, 179, 248));
+    border-radius: 5px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+.header__link {
+    display: block;
+    position: relative;
+    background: transparent;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: #fff;
+}
+
+.banner {
+    min-width: 630px;
+    height: 535px;
+    background: url(../images/banner_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.content {
+    margin: 0 auto;
+    min-width: 482px;
+}
+
+.content>* {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title {
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding-top: 170px;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 200;
+}
+
+.button-wrap {
+    display: inline-block;
+    position: relative;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.button-wrap:hover {
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.button {
+    border: none;
+    color: #fff;
+    text-transform: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size: 34px;
+    background-image: linear-gradient(0deg, #34ae22, #6ed258);
+}
+
+.button:hover {
+    cursor: pointer;
+}
