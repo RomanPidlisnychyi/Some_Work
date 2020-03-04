@@ -122,3 +122,27 @@
 .button:hover {
     cursor: pointer;
 }
+
+.cards {
+    background-color: #fff;
+}
+
+.cards__title {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 430px;
+    justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.card:nth-last-child(-n + 5) {
+    margin-bottom: 0;
+}
