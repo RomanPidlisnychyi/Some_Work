@@ -7,8 +7,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.body {
-    min-width: 482px;
+.wrapper {
+    min-width: 910px;
 }
 
 .list {
@@ -25,7 +25,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    min-width: 482px;
     max-width: 1024px;
 }
 
@@ -68,15 +67,20 @@
 }
 
 .banner {
-    min-width: 630px;
+    position: absolute;
+    min-width: 910px;
+    top: 63px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 535px;
     background: url(../images/banner_bg.png) no-repeat center;
     background-size: cover;
+    z-index: -1;
 }
 
 .content {
     margin: 0 auto;
-    min-width: 482px;
 }
 
 .content>* {
@@ -87,8 +91,8 @@
 .title {
     font-size: 52px;
     font-weight: 400;
-    margin-bottom: 40px;
-    padding-top: 170px;
+    margin-bottom: 25px;
+    padding-top: 155px;
 }
 
 .subtitle {
@@ -103,6 +107,7 @@
     border: 6px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     transition: opacity 0.3s;
+    margin-bottom: 60px;
 }
 
 .button-wrap:hover {
@@ -125,24 +130,100 @@
 
 .cards {
     background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto 60px;
+    width: 482px;
+    border-bottom: 7px solid #51c03d;
 }
 
 .cards__title {
+    padding: 25px 0;
     font-size: 22px;
     font-weight: 200;
+    color: #868686;
 }
 
 .cards__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto 20px;
     width: 430px;
     justify-content: space-between;
 }
 
 .card {
     margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.card__title {
+    color: #929292;
 }
 
 .card:nth-last-child(-n + 5) {
     margin-bottom: 0;
+}
+
+.services {
+    width: 760px;
+    margin: 0 auto;
+}
+
+.services__title {
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    background-color: #ececec;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    fill: #55a1ff;
+    transition: transform 0.3s;
+}
+
+.services__title {
+    font-size: 20px;
+    color: #7e7c7c;
+}
+
+.services__link:hover .icon {
+    transform: scale(1.2, 1.2);
+}
+
+.footer {
+    background-color: #414141;
+    padding: 10px;
+}
+
+.footer__text {
+    color: #b1b1b1;
+}
+
+.footer__link {
+    color: #b1b1b1;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
