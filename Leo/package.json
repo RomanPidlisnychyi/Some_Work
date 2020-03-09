@@ -1,0 +1,16 @@
+{
+    "name": "leo",
+    "version": "1.0.0",
+    "description": "If you want to know how to build that kind of startet kit you can watch the YouTube videos I created while working on this starter kit: https://goo.gl/sMFmyN (Note: Videos are in Polish).",
+    "main": "index.js",
+    "scripts": {
+        "scss:build": "node-sass src/scss/styles.scss -o src/css",
+        "scss:watch": "node-sass --watch src/scss/styles.scss -o src/css",
+        "build": "npm run scss:build && npm run scss:watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^4.13.1"
+    }
+}
