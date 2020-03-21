@@ -1,0 +1,50 @@
+.call-back {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 173px;
+    color: #fff;
+    background-color: #097e89;
+    &__content {
+        margin-right: 80px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        padding-top: 25px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 2;
+        opacity: 0.7;
+    }
+    &__form {
+        align-self: center;
+        display: flex;
+    }
+    &__input {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        width: 205px;
+        height: 45px;
+        color: #fff;
+        opacity: 0.7;
+        padding-left: 20px;
+        border-right: none;
+        &--first {
+            border-radius: 2px 0 0 2px;
+        }
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    &__button {
+        color: #097e89;
+        font-size: 12px;
+        width: 99px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

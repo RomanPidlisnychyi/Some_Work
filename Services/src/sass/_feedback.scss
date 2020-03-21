@@ -1,0 +1,74 @@
+.feedback {
+    &__list-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        margin: 0 auto;
+        background-color: #3d3d3d;
+        text-transform: none;
+        color: #b1aeae;
+    }
+    &__nav {
+        width: 215px;
+    }
+    &__text {
+        &::after {
+            content: "";
+            display: block;
+            margin: 18px auto 0;
+            width: 62px;
+            height: 2px;
+            background-image: url(../images/feedback_after.png);
+        }
+    }
+    &-banner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+    }
+    &__nav {
+        margin-right: 67px;
+    }
+    &-cards {
+        display: flex;
+        justify-content: space-between;
+        width: 645px;
+    }
+    &__card {
+        position: relative;
+        width: 202px;
+        height: 223px;
+        &-list {
+            position: absolute;
+            bottom: 10px;
+            left: 9px;
+            display: flex;
+            &__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 43px;
+                height: 33px;
+                font-size: 10px;
+                color: #272727;
+                background-color: #fff;
+                &--second {
+                    justify-content: start;
+                    width: 136px;
+                    height: 32px;
+                    margin-left: 5px;
+                }
+            }
+            &__title {
+                padding-left: 3px;
+                font-size: 12px;
+                text-align: left;
+            }
+            &__subtitle {
+                font-size: 10px;
+                padding-top: 2px;
+            }
+        }
+    }
+}

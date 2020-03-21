@@ -1,0 +1,26 @@
+.clients {
+    color: #656464;
+    background-color: #fff;
+    & .services__title::before {
+        background-image: url(../images/clients__before_bg.png);
+    }
+    & .services__title::after {
+        background-image: url(../images/clients__after_bg.png);
+    }
+    &-list {
+        display: flex;
+        width: 930px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-bottom: 115px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 190px;
+        height: 110px;
+    }
+}
