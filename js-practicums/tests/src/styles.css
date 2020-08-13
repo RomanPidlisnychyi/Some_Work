@@ -1,0 +1,24 @@
+.highButton {
+    display: none;
+}
+
+li {
+    position: relative;
+    list-style: lower-latin inside;
+}
+
+p {
+    display: inline-block;
+    padding: 0 5px 0 25px;
+    margin: 0;
+}
+
+.success {
+    border: 1px solid green;
+    background: 3px / contain no-repeat url(./images/check.svg);
+}
+
+.unSuccess {
+    border: 1px solid red;
+    background: 3px / 16px no-repeat url(./images/cross.svg);
+}

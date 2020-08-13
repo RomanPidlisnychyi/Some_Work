@@ -1,0 +1,14 @@
+<fieldset>
+    <legend>Question {{this.numberOfQuestion}}:<br/>{{this.question}}</legend>
+    <ul>
+        {{#each this.answers}}
+        <li>
+            <input type="radio" id="{{this}}" name="answer{{this.numberOfQuestion}}"/>
+            <label for="{{this}}">{{this}}</label>
+        </li>
+        {{/each}}
+    </ul>
+    <div>
+        <button type="submit" name="next" disabled>Next</button>
+    </div>
+</fieldset>

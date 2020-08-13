@@ -1,0 +1,28 @@
+{{!-- <li class="products-name">
+    <p>name:</p>
+    {{#each this}}
+    <div class="name" title="{{name}}"><p>{{name}}</p></div>
+    {{/each}}
+</li>
+<li class="products-article">
+    <p>article:</p>
+    {{#each this}}
+    <div class="article" title="{{name}}"><p>{{article}}</p></div>
+    {{/each}}
+</li>
+<li class="products-count">
+    <p>count:</p>
+    {{#each this}}
+    <div class="count" title="{{name}}"><p>{{count}}</p></div>
+    {{/each}}
+</li> --}}
+
+<li class="products-name">
+    <div class="name" title="{{name}}"><p>{{name}}</p></div>
+</li>
+<li class="products-article">
+    <div class="article" title="{{name}}"><input type="text" name="article-{{name}}" id="article" placeholder="{{article}}" /></div>
+</li>
+<li class="products-count">
+    <div class="count" title="{{name}}"><input type="text" name="count-{{name}}" id="count" placeholder="{{count}}" /></div>
+</li>

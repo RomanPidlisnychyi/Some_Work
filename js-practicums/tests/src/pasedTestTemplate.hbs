@@ -1,0 +1,12 @@
+{{#each this}}
+<fieldset>
+    <legend>Question {{numberOfQuestion}}:<br/>{{question}}</legend>
+    <ul>
+        {{#each answers}}
+        <li>
+            <p id="{{../numberOfQuestion}}{{this}}">{{this}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</fieldset>
+{{/each}}
