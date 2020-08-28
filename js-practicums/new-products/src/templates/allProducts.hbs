@@ -1,0 +1,27 @@
+<li class="products-article">
+    <p>article:</p>
+    {{#each this}}
+    <div title="{{name}}"><p>{{article}}</p></div>
+    {{/each}}
+</li>
+<li class="products-name">
+    <p>name:</p>
+    {{#each this}}
+    <div class="name" title="{{name}}"><p>{{name}}</p></div>
+    {{/each}}
+</li>
+<li class="products-count">
+    <p>count:</p>
+    {{#each this}}
+    <div title="{{name}}"><input type="text" value="{{count}}" name="count-{{name}}" class="count" placeholder="{{count}}" /></div>
+    {{/each}}
+</li>
+<li class="products-services">
+    <p>services:</p>
+    {{#each this}}
+    <div class="string" title="{{name}}">
+        <button class="save" data-id="{{index}}" data-count="{{count}}" title="save-{{name}}" disabled>Save</button>
+        <button class="delete" data-id="{{index}}" title="delete-{{name}}">Delete</button>
+    </div>
+    {{/each}}
+</li>
